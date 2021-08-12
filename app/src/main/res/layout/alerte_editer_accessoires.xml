@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_card_alert"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingTop="36dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="36dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:padding="15dp"
+                android:text="Caractéristiques Accessoire"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText_type_accessoire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_champs_texte_white"
+                    android:ems="10"
+                    android:hint="Type"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_marque_accessoire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_champs_texte_white"
+                    android:ems="10"
+                    android:hint="Marque"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_caracteristique_accessoire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_champs_texte_white"
+                    android:ems="10"
+                    android:hint="Caractéristique"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_autre_caracteristique_accessoire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_champs_texte_white"
+                    android:ems="10"
+                    android:hint="Autre caractéristique"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_horaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_horaire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:button="@drawable/ic_baseline_rotate_right_24"
+                        android:text="horaire"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_antihoraire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:button="@drawable/ic_baseline_rotate_left_24"
+                        android:text="anti horaire"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:padding="15dp"
+                android:text="Etat accessoire"
+                android:textColor="@color/red"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_etat_accessoire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@null"
+                    android:button="@drawable/ic_outline_build_24"
+                    android:buttonTint="@null"
+                    android:checked="false"
+                    android:text=" OK"
+                    android:textColor="#B5EA4C"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_hs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:button="@drawable/ic_outline_build_24"
+                    android:buttonTint="@null"
+                    android:text="HS"
+                    android:textColor="@color/red"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_reparer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:button="@drawable/ic_outline_build_24"
+                    android:buttonTint="@null"
+                    android:text="A REPARER"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView_cause_etat_accessoire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expliquer la cause des dégâts si possible :"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="24sp" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/editText_cause_etat_accessoire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border_champs_texte_white"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:paddingLeft="12dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_ajouter_sens_deriveur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/red"
+                    android:text="Ajouter" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

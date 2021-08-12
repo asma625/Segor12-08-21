@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal"
+                    android:padding="24dp"
+                    android:text="TACHES"
+                    android:textColor="#8F3939"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="24dp"
+                    android:src="@drawable/ic_baseline_more_time_24"
+                    app:srcCompat="@drawable/ic_baseline_more_time_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border_champs_tache"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_demontage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Démontage"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_demontage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_demontage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_nettoyage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Nettoyage"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_nettoyage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_nettoyage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_expertise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Expertise-Etudes"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_expertise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_expertise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_montage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Montage"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_montage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_montage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_essai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Essai"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_essai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_essai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_sablage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Sablage"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_sablage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_sablage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_controle_finale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Contrôle final"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_controle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_peinture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Peinture"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_peinture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_peinture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_colisage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Colisage-Chassis"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText_tache_colisage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/border_champs_tache"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_heure_colisage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="36dp"
+                        android:gravity="center"
+                        android:text="Heure(s)" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="70dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textView_tache1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="36dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Total"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editText_tache_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="36dp"
+                    android:background="@drawable/border_champs_tache"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="36dp"
+                    android:gravity="center"
+                    android:text="Heure(s)" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar_edition_controle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#8F3939"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="30dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:menu="@menu/menu_save" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

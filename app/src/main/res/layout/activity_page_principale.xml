@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_card"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.PagePrincipaleActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_segor" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        app:srcCompat="@drawable/reducteur_logo" />
+
+    <LinearLayout
+        android:layout_width="449dp"
+        android:layout_height="191dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_devis_demontage_en_cours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#0036EC"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text=" Devis  en cours"
+            android:textSize="24sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/button_nouveau_devis_demontage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#0036EC"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Nouveau Devis"
+            android:textSize="24sp"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

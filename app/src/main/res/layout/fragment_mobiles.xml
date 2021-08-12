@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MobilesFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="24dp"
+                    android:text="MOBILES"
+                    android:textColor="@color/green"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:srcCompat="@drawable/ic_baseline_looks_3_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_champs_texte"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_planetaire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/engrenage_planetaire" />
+
+                    <TextView
+                        android:id="@+id/textView_titre_planetaire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Planétaire"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_cyl_droit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/engrenage_cyl_droit" />
+
+                    <TextView
+                        android:id="@+id/textView_titre_cyl_droit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Cylindrique Droit"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_cyl_helicoidal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/engrenage_cyl_helicoidal" />
+
+                    <TextView
+                        android:id="@+id/textView_cyl_helicoidal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Cylindrique hélcoidal"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_spiro_droit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/engrenage_spiro_droit" />
+
+                    <TextView
+                        android:id="@+id/textView_spiro_droit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Spiro Droit"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_spiro_conique"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/engrenage_spiro_conique" />
+
+                    <TextView
+                        android:id="@+id/textView_spiro_conique"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Spiro conique"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_vis_sans_fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/engrenage_vis_sans_fin" />
+
+                    <TextView
+                        android:id="@+id/textView_vis_sans_fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Vis sans fin"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_arbre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/arbre" />
+
+                    <TextView
+                        android:id="@+id/textView_arbre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Arbre"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_engrenage_chevron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:background="@drawable/color_card_green"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/engrenages_chevrons" />
+
+                    <TextView
+                        android:id="@+id/textView_engrenage_chevron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:text="Chevron"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_autre_engrenage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color_card_green"
+
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:srcCompat="@drawable/ic_baseline_add_to_photos_24" />
+
+                    <TextView
+                        android:id="@+id/textView_ajouter_engrenage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Autre engrenage"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_titre_mobiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/green"
+                android:backgroundTint="@color/green"
+                android:padding="12dp"
+                android:text="Liste des mobiles sélectionnés"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_mobiles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar_mobiles"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/green"
+        app:menu="@menu/menu_photo" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

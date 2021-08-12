@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/color_card_yellow"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+
+        <EditText
+            android:id="@+id/editText_nome_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editText_type_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="type"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+
+        <EditText
+            android:id="@+id/editText_diametre_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="diamètre"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroup_norme_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_norme_conforme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:text="Conforme" />
+
+            <RadioButton
+                android:id="@+id/radioButton_norme_non_conforme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Non conforme" />
+        </RadioGroup>
+
+
+        <ImageButton
+            android:id="@+id/button_supprimer_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+
+    </LinearLayout>
+
+</LinearLayout>

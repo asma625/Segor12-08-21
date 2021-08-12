@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SEGOR Industrie</string>
+    <string name="url_spring">http://10.0.2.2:8082/</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_reducteur">REDUCTEUR</string>
+    <string name="menu_accessoires">ACCESSOIRES</string>
+    <string name="menu_mobiles">MOBILES</string>
+
+    <string name="menu_carter">CARTER</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="matiere_array">
+        <item>Matière</item>
+        <item>acier 8.8</item>
+        <item>acier 12.9</item>
+        <item>inox</item>
+    </string-array>
+
+
+</resources>

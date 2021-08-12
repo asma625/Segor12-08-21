@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<item
+
+    android:icon="@drawable/ic_baseline_filter_1_24"
+    android:title="PROCEDURE DEMONTAGE">
+<menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reducteur"
+            android:icon="@drawable/ic_baseline_filter_1_24"
+            android:title="@string/menu_reducteur"
+            />
+        <item
+            android:id="@+id/nav_accessoires"
+            android:icon="@drawable/ic_baseline_filter_2_24"
+            android:title="@string/menu_accessoires" />
+        <item
+            android:id="@+id/nav_mobiles"
+            android:icon="@drawable/ic_baseline_filter_3_24"
+            android:title="@string/menu_mobiles" />
+        <item
+            android:id="@+id/nav_carter"
+            android:icon="@drawable/ic_baseline_filter_4_24"
+            android:title="CARTER" />
+
+        <item
+            android:id="@+id/nav_visserie"
+            android:icon="@drawable/ic_baseline_filter_5_24"
+            android:title="VISSERIE" />
+
+
+    </group>
+</menu>
+</item>
+    <item
+
+        android:checked="true"
+        android:title="PHASE D'EXPERTISE">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+
+                    android:id="@+id/nav_liste_accessoires"
+                    android:title="EXPERTISE DES ACCESSOIRES"
+                    android:icon="@drawable/ic_baseline_playlist_add_check_24" />
+             <!--   <item
+                    android:id="@+id/nav_liste_mobile"
+                    android:title="EXPERTISE DES MOBILES GV" />
+
+                <item
+                    android:id="@+id/nav_expertise_mobile_mv"
+                    android:title="EXPERTISE DES MOBILES MV" />
+                <item
+                    android:id="@+id/nav_expertise_mobile_pv"
+                    android:title="EXPERTISE DES MOBILES PV" />!-->
+
+
+                <item
+                    android:id="@+id/nav_expertise_carter"
+                    android:title="EXPERTISE DU CARTER"
+                    android:icon="@drawable/ic_baseline_playlist_add_check_24"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+
+        android:checked="true"
+        android:title="TACHES ET CONTROLES">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_controles"
+                    android:icon="@drawable/ic_outline_build_24"
+                    android:title="CONTROLES" />
+                <item
+                    android:id="@+id/nav_taches"
+                    android:icon="@drawable/ic_baseline_more_time_24"
+                    android:title="TACHES" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+
+        android:checked="true"
+        android:title="ACTIONS">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_synchro"
+                    android:icon="@drawable/ic_baseline_phonelink_24"
+                    android:title="SYNCHRONISER DEVIS" />
+                <item
+                    android:id="@+id/nav_pdf"
+                    android:icon="@drawable/ic_baseline_picture_as_pdf_24"
+                    android:title="GENERER PDF" />
+                <item
+                    android:id="@+id/nav_annotations"
+                    android:icon="@drawable/ic_baseline_spellcheck_24"
+                    android:title="ANNOTATIONS DES PHOTOS"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

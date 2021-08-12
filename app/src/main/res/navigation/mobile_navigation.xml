@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_reducteur">
+
+    <fragment
+        android:id="@+id/nav_reducteur"
+        android:name="com.segor.demontage.view.ReducteurFragment"
+        android:label="@string/menu_reducteur"
+        tools:layout="@layout/fragment_reducteur" />
+
+    <fragment
+        android:id="@+id/nav_accessoires"
+        android:name="com.segor.demontage.view.AccessoiresFragment"
+        android:label="@string/menu_accessoires"
+        tools:layout="@layout/fragment_accessoires" />
+    <fragment
+        android:id="@+id/nav_mobiles"
+        android:name="com.segor.demontage.view.MobilesFragment"
+        android:label="ARBRES ET ENGRENAGES"
+        tools:layout="@layout/fragment_mobiles" />
+    <fragment
+        android:id="@+id/nav_carter"
+        android:name="com.segor.demontage.view.CarterFragment"
+        android:label="CARTER"
+        tools:layout="@layout/fragment_carter" />
+    <fragment
+        android:id="@+id/nav_visserie"
+        android:name="com.segor.demontage.view.VisserieFragment"
+        android:label="LISTE DE LA VISSERIE"
+        tools:layout="@layout/fragment_visserie" />
+    <fragment
+        android:id="@+id/nav_controles"
+        android:name="com.segor.demontage.view.ControleFragment"
+        android:label="CONTROLES"
+        tools:layout="@layout/fragment_controle" />
+    <fragment
+        android:id="@+id/nav_taches"
+        android:name="com.segor.demontage.view.TacheFragment"
+        android:label="Tâches"
+        tools:layout="@layout/fragment_tache" />
+    <fragment
+        android:id="@+id/nav_liste_accessoires"
+        android:name="com.segor.demontage.view.ListeAccessoiresFragment"
+        android:label="fragment_liste_accessoires"
+        tools:layout="@layout/fragment_liste_accessoires" />
+
+    <activity
+        android:id="@+id/nav_annotations"
+        android:name="com.segor.demontage.utils.AnnotationActivity"
+        android:label="AnnotationActivity" />
+    <fragment
+        android:id="@+id/nav_pdf"
+        android:name="com.segor.demontage.view.PdfFragment"
+        android:label="Création de pdf"
+        tools:layout="@layout/fragment_pdf" />
+    <fragment
+        android:id="@+id/nav_expertise_carter"
+        android:name="com.segor.demontage.view.ExpertiseCarterFragment"
+        android:label="fragment_expertise_carter"
+        tools:layout="@layout/fragment_expertise_carter" />
+    <fragment
+        android:id="@+id/nav_synchro"
+        android:name="com.segor.demontage.view.SynchroFragment"
+        android:label="SYNCHRONISATION DU DONNEES " />
+
+
+</navigation>
